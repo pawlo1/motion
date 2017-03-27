@@ -5,9 +5,9 @@
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 	</head>
-	<body onload="init()">
+	<body onload="navigator.accelerometer.watchAcceleration(onSuccess, onError, options)">
 		<h1>Ruch urządzenia</h1>
 		<p id="dp"></p>
-		<input type="button" onclick="navigator.accelerometer.watchAcceleration(onSuccess, onError, options)" value="Sprawdź ruch">
+		
 	</body>
 </html>
